@@ -38,27 +38,25 @@ const Home = () => {
         <Grid container spacing={2.5}>
           {bbc.loading ? (
             <>
-              {Array.from(new Array(4)).map((item) => (
-                <>
-                  <Grid item md={3} sm={6} xs={12} mb={2}>
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                        marginBottom: "0.5em",
-                      }}
-                      height={125}
-                    />
+              {Array.from(new Array(4)).map((item, i) => (
+                <Grid item md={3} sm={6} xs={12} mb={2} key={i}>
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                      marginBottom: "0.5em",
+                    }}
+                    height={125}
+                  />
 
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                      }}
-                      height={25}
-                    />
-                  </Grid>
-                </>
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                    }}
+                    height={25}
+                  />
+                </Grid>
               ))}
             </>
           ) : (
@@ -83,26 +81,24 @@ const Home = () => {
         <Grid container spacing={2.5}>
           {hn.loading ? (
             <>
-              {Array.from(new Array(4)).map((item) => (
-                <>
-                  <Grid item md={3} sm={6} xs={12} mb={2}>
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                        marginBottom: "0.5em",
-                      }}
-                      height={125}
-                    />
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                      }}
-                      height={25}
-                    />
-                  </Grid>
-                </>
+              {Array.from(new Array(4)).map((item, i) => (
+                <Grid item md={3} sm={6} xs={12} mb={2} key={i}>
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                      marginBottom: "0.5em",
+                    }}
+                    height={125}
+                  />
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                    }}
+                    height={25}
+                  />
+                </Grid>
               ))}
             </>
           ) : (
@@ -127,26 +123,24 @@ const Home = () => {
         <Grid container spacing={2.5}>
           {af.loading ? (
             <>
-              {Array.from(new Array(4)).map((item) => (
-                <>
-                  <Grid item md={3} sm={6} xs={12} mb={2}>
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                        marginBottom: "0.5em",
-                      }}
-                      height={125}
-                    />
-                    <Skeleton
-                      variant="rectangular"
-                      sx={{
-                        backgroundColor: "primary.light",
-                      }}
-                      height={25}
-                    />
-                  </Grid>
-                </>
+              {Array.from(new Array(4)).map((item, i) => (
+                <Grid item md={3} sm={6} xs={12} mb={2} key={i}>
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                      marginBottom: "0.5em",
+                    }}
+                    height={125}
+                  />
+                  <Skeleton
+                    variant="rectangular"
+                    sx={{
+                      backgroundColor: "primary.light",
+                    }}
+                    height={25}
+                  />
+                </Grid>
               ))}
             </>
           ) : (

@@ -5,15 +5,18 @@ const NewsCard = ({ data }) => {
   return (
     <Card
       sx={{
-        backgroundColor: "background.default",
         "&:hover": {
           opacity: 0.9,
         },
       }}
     >
-      <CardActionArea href={data.url} target="_blank">
+      <CardActionArea
+        href={data.url}
+        target="_blank"
+        sx={{ backgroundColor: "primary.main" }}
+      >
         <CardMedia component="img" image={data.cover} height={125} />
-        <Typography variant="h3" fontSize={17} color="secondary.light" pt={1}>
+        <Typography variant="h3" fontSize={17} color="secondary" pt={1}>
           {data.title}
         </Typography>
       </CardActionArea>

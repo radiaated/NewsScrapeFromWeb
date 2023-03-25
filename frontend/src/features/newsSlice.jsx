@@ -3,20 +3,17 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchBbcNews = createAsyncThunk("news/fetchBbcNews", async () => {
-  const { data } = await axios.get(`/top/bbc`);
-  console.log(data);
+  const { data } = await axios.get(`http://127.0.0.1:5000/top/bbc`);
 
   return data;
 });
 export const fetchHnNews = createAsyncThunk("news/fetchHnNews", async () => {
-  const { data } = await axios.get(`/top/hn`);
-  console.log(data);
+  const { data } = await axios.get(`http://127.0.0.1:5000/top/hn`);
 
   return data;
 });
 export const fetchAfNews = createAsyncThunk("news/fetchAfNews", async () => {
-  const { data } = await axios.get(`/top/af`);
-  console.log(data);
+  const { data } = await axios.get(`http://127.0.0.1:5000/top/af`);
 
   return data;
 });
