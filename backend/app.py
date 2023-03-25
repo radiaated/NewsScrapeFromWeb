@@ -20,16 +20,13 @@ news_fields = {
 def index():
     return app.send_static_file("index.html")
     
-
-
 class CNNNews(Resource):
-
     @marshal_with(news_fields)
     def get(self):
-        # try:
+        try:
             news = scraper.cnn_top()
             return news, 200
-        # except:
+        except:
             return abort(404, message="Unable to fetch news.")
 
 class BBCNews(Resource):
